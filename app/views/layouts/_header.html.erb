@@ -1,0 +1,19 @@
+ <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><%= link_to 'shadow play', home_path%> </h1>
+          <h2>Simple. Contemporary. Website Template.</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="selected"><%= link_to 'Home', home_path %></a></li>
+          <li><%= link_to 'Example', example_path %> </li>
+          <li><%= link_to 'Page', page_path %> </li>
+          <li><%= link_to 'Another Page', ano_page_path %> </li>
+          <li><%= link_to 'Contact', contact_path %></li>
+        </ul>
+      </div>
+    </div>

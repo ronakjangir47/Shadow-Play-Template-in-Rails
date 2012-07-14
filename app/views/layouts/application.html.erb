@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ShadowPlayInRails</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="main">
+   <%= render 'layouts/header' %>
+    <div id="content_header"></div>
+    <div id="site_content">
+      <%= render 'layouts/sidebar' %>
+      <%= yield %>
+    </div>
+    <div id="content_footer"></div>
+   <%= render 'layouts/footer' %>
+  </div>
+
+
+</body>
+</html>
