@@ -1,4 +1,7 @@
 ShadowPlayInRails::Application.routes.draw do
+
+  
+
   get "shadow_play/home"
 
   get "shadow_play/example"
@@ -8,6 +11,8 @@ ShadowPlayInRails::Application.routes.draw do
   get "shadow_play/ano_page"
 
   get "shadow_play/contact"
+
+   match '/' => 'shadow_play#home'
 
   match '/home' => 'shadow_play#home'
 
